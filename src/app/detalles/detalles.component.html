@@ -1,0 +1,7 @@
+<div class="container-fluid">
+    <img width="300" src="{{selected.Img}}" alt="...">
+    <h2>{{selected.Nombre}}</h2>
+    <label>Precio: {{selected.Precio}}</label>
+    <h2>Ingredientes:</h2>
+    <li *ngFor="let postres of selected.Ingredientes">{{postres}}</li>
+</div>

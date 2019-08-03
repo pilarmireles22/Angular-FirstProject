@@ -1,0 +1,61 @@
+<h2>Categoria de Juegos:</h2>
+<button [routerLink]="['/juegos/0']" type="button" class="btn btn-danger">Carreras</button>
+<button [routerLink]="['/juegos/1']" type="button" class="btn btn-primary">Shooters</button>
+<button [routerLink]="['/juegos/2']" type="button" class="btn btn-success">SandBox</button>
+<button [routerLink]="['/juegos/3']" type="button" class="btn btn-warning">Moba</button>
+<h2 class="title-postre">Postres:</h2>
+<div class="container">
+<div class="card" style="width: 18rem;">
+    <img src="https://sugarspunrun.com/wp-content/uploads/2018/07/Ice-Cream-Cone-Cupcakes-Recipe-1-of-1-6.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Ice Cream</h5>
+      <a href="#" class="btn btn-primary" [routerLink]="['/detalles/0']">Detalles</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="https://saborgourmet.com/wp-content/uploads/postres-frutas-rapidos-ensalada-Stock-.jpg" class="card-img-top fruits" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Fruits Dessert</h5>
+      <a href="#" class="btn btn-primary" [routerLink]="['/detalles/1']">Detalles</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="http://www.veintitantos.com/sites/default/files/styles/v2-img1000x563/public/articulo/2018-08/11_razones_para_comer_gelatina_a_la_menor_provocacion.jpg?itok=xiM3gek2" class="card-img-top fruits" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Gelatina</h5>
+      <a href="#" class="btn btn-primary" [routerLink]="['/detalles/2']">Detalles</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2009/5/27/0/IGSP01_25282_s4x3.jpg.rend.hgtvcom.616.462.suffix/1485531666198.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Cheesecake</h5>
+      <a href="#" class="btn btn-primary" [routerLink]="['/detalles/3']">Detalles</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="https://dietamediterranea.com/wp-content/uploads/2017/04/20170424-Flan.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Flan</h5>
+      <a href="#" class="btn btn-primary" [routerLink]="['/detalles/4']">Detalles</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2018/04/pick-and-mix-chocolate-and-sweet-cake.jpg" class="card-img-top cake" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Cake</h5>
+      <a href="#" class="btn btn-primary" [routerLink]="['/detalles/5']">Detalles</a>
+    </div>
+  </div>
+</div>
+<h2>Frutas:</h2>
+<div class="container">
+  <div *ngFor="let frutas of frutas;let i = index" class="card" style="width: 18rem;">
+    <img [src]="frutas.img" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{frutas.Nombre}}</h5>
+      <a href="#" class="btn btn-primary" routerLink="/frutas" [queryParams]="frutas">Detalles</a>
+    </div>
+  </div>
+  
+</div>

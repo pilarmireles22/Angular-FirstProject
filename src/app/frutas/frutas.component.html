@@ -1,0 +1,13 @@
+<div class="container-fluid" *ngIf="selected; else vacio">
+<div class="card" style="width: 18rem;">
+        <img [src]="selected.img" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{selected.Nombre}}</h5>
+          <p class="card-text">{{selected.Precio}}</p>
+          <p class="card-text">{{selected.color}}</p>
+        </div>
+      </div>
+    </div>
+    <ng-template #vacio>
+      <h2>No seleccionaste la fruta</h2>
+    </ng-template>
