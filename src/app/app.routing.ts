@@ -6,6 +6,7 @@ import {FrutasComponent} from './frutas/frutas.component';
 import {HomeComponent} from './home/home.component';
 import { Page404Component } from './page404/page404.component';
 import { DetallesComponent } from './detalles/detalles.component';
+import { FormularioComponent } from './formulario/formulario.component';
 
 
 const appRoutes: Routes = [
@@ -14,7 +15,8 @@ const appRoutes: Routes = [
     {path: 'animales', component: AnimalesComponent},
     {path: 'frutas', component: FrutasComponent},
     {path: 'detalles/:id', component: DetallesComponent},
-    {path: '**', component: Page404Component}
+    {path: 'formulario', component: FormularioComponent},
+    {path: '**', component: Page404Component},
 ];
 
 export const appRoutingProviders: any[] = [];

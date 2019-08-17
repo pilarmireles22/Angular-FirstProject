@@ -1,0 +1,41 @@
+<!-- Default form register -->
+<form class="text-center border border-light p-5">
+
+    <p class="h4 mb-4">Formulario - APi</p>
+    <div class="form-row mb-4">
+        <div class="col">
+            <!-- cantidad -->
+            <input name="cantidad" type="text" id="cantidad" [(ngModel)]="cantidad" class="form-control"
+                placeholder="Cantidad">
+        </div>
+        <div class="col">
+            <!-- genero -->
+            <div class="form-group">
+                <select name="gender" type="text" [(ngModel)]="gender" placeholder="select gender" class="form-control"
+                    id="gender">
+                    <option>male</option>
+                    <option>famale</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- Sign up button -->
+    <button type="submit" class="btn btn-primary" (click)="search()">Search</button>
+
+</form>
+<!-- Default form  -->
+
+<table class="table">
+    <tr>
+        <td>#</td>
+        <td>Nombre</td>
+        <td>Email</td>
+        <td>Genero</td>
+    </tr>
+    <tr *ngFor="let x of results;let i = index">
+        <td>{{i+1}}</td>
+        <td>{{ x.name.first}} {{ x.name.last }}</td>
+        <td>{{x.email}}</td>
+        <td>{{ x.gender }}</td>
+    </tr>
+</table>

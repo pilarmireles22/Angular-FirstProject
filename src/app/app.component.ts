@@ -16,6 +16,7 @@ export class AppComponent {
   {path: '/juegos', title: 'juegos'},
   {path: '/frutas', title: 'Frutas'},
   {path: '/animales', title: 'Animales'},
+  {path: '/formulario', title: 'Formulario'},
  ];
   savePerson() {
     alert('hola');

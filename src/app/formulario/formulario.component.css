@@ -1,0 +1,20 @@
+.form-row {
+    display: block!important;
+    
+    width: 17%;
+}
+#cantidad{
+    
+    margin-bottom: 23px;
+}
+p{
+    
+    text-align: left;
+}
+button{
+    
+    display: flex;
+}
+.table{
+    width:50%;
+}
