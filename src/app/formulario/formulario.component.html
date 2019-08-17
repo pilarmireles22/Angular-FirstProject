@@ -14,7 +14,7 @@
                 <select name="gender" type="text" [(ngModel)]="gender" placeholder="select gender" class="form-control"
                     id="gender">
                     <option>male</option>
-                    <option>famale</option>
+                    <option>female</option>
                 </select>
             </div>
         </div>
@@ -34,7 +34,7 @@
     </tr>
     <tr *ngFor="let x of results;let i = index">
         <td>{{i+1}}</td>
-        <td>{{ x.name.first}} {{ x.name.last }}</td>
+        <td ><a [routerLink]="['/detalles-users']" [queryParams]="{nombre:x.name.first+x.name.last, email:x.email,img:x.picture.large}">{{ x.name.first}} {{ x.name.last }}</a></td>
         <td>{{x.email}}</td>
         <td>{{ x.gender }}</td>
     </tr>

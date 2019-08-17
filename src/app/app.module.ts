@@ -12,6 +12,7 @@ import { DetallesComponent } from './detalles/detalles.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { UserService } from './user.service';
 import { HttpClientModule } from '@angular/common/http';
+import { DetallesUsersComponent } from './detalles-users/detalles-users.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     FrutasComponent,
     Page404Component,
     DetallesComponent,
-    FormularioComponent
+    FormularioComponent,
+    DetallesUsersComponent
   ],
   imports: [
     BrowserModule,
